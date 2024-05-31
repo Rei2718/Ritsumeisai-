@@ -1,10 +1,10 @@
 "use client";
 
-import { useEffect } from 'react';
+import { Suspense } from 'react';
 import Header from './components/header';
 import ScrollRevealContainer from './components/ScrollReveal';
 
-export default function Home() {  
+function HomeContent() {
   return (
     <>
       <Header />
@@ -14,7 +14,7 @@ export default function Home() {
         <section className="flex items-center justify-center h-lvh">
           {/* TopCharacter */}
           <div className="top-[12.5%] transform -translate-y-1/2 text-white text-center absolute mx-10 sm:mx-10 z-10">
-           <ScrollRevealContainer move="bottom">
+            <ScrollRevealContainer move="bottom">
               <div className="mb-4 px-2 sm:px-5 text-4xl sm:text-5xl md:text-7xl">2024 RitsumeiSai</div>
             </ScrollRevealContainer>
             <ScrollRevealContainer move="bottom">
@@ -89,5 +89,13 @@ export default function Home() {
         </section>
       </div>
     </>
+  );
+}
+
+export default function Home() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <HomeContent />
+    </Suspense>
   );
 }

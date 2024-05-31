@@ -1,10 +1,10 @@
 "use client";
 
-import { useEffect } from 'react';
+import { Suspense } from 'react';
 import Header from '../components/header';
 import ScrollRevealContainer from '../components/ScrollReveal';
 
-export default function section01() {  
+function Section01Content() {
   return (
     <>
       <Header />
@@ -33,7 +33,7 @@ export default function section01() {
                   <span className="text-gray-500"></span>
                 </ScrollRevealContainer>
               </div>
-              <div className="text-sm sm:text-lg">
+              <div className="text-sm sm:text-base">
                 <ScrollRevealContainer move="bottom">
                   <p className="mb-4 sm:mb-8">
                     <strong>立命館慶祥中学校・高等学校</strong>は、開校以来この言葉をスローガンに掲げ、日本国内だけでなく、世界を舞台に活躍できる人材の育成に力を入れてきました。
@@ -79,5 +79,13 @@ export default function section01() {
         </section>
       </div>
     </>
+  );
+}
+
+export default function Section01() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <Section01Content />
+    </Suspense>
   );
 }
