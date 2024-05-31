@@ -5,11 +5,6 @@ import Header from '../components/header';
 import ScrollRevealContainer from '../components/ScrollReveal';
 
 export default function section03() {
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-  
   return (
     <>
       <Header />

@@ -4,12 +4,7 @@ import { useEffect } from 'react';
 import Header from './components/header';
 import ScrollRevealContainer from './components/ScrollReveal';
 
-export default function Home() {
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-  
+export default function Home() {  
   return (
     <>
       <Header />
