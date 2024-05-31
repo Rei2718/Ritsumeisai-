@@ -12,9 +12,7 @@ export default function Home() {
           <section className="flex items-center justify-center h-screen px-10">
             {/* TopCharacter */}
             <div className="top-[12.5%] transform -translate-y-1/2 text-white text-center absolute z-10">
-              <div className="mb-4 px-5 text-5xl md:text-7xl">2024 RitsumeiSai</div>
-              <div className="mb-1 text-lg md:text-xl">2024.7.20 (Mon) - 2024.7.21 (Tue)</div>
-              <div className="text-sm md:text-base">@RitsumeikanKeisho 7:12</div>
+              This is section01 
             </div>
           </section>
 
