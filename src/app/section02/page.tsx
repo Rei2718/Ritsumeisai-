@@ -7,7 +7,7 @@ import ScrollRevealContainer from '../components/ScrollReveal';
 function Section02Content() {
   return (
     <>
-      <Header />>
+      <Header />
       <div className="relative z-10 bg-gradient-css">
         {/* Section 1 */}
         <section className="flex items-center justify-center h-lvh">
