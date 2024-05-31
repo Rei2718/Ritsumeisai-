@@ -1,6 +1,7 @@
 "use client";
 
 import Header from './components/header';
+import ScrollRevealContainer from './components/ScrollRevealContainer';
 
 export default function Home() {
   return (
