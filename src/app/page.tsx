@@ -73,7 +73,6 @@ export default function Home() {
 
           {/* Section 3 */}
           <section className="flex items-center justify-center h-screen text-center px-10">
-            <p className="text-2xl text-white">This is some description for the third section. It has a solid black background.</p>
           </section>
 
           {/* Section 4 */}
