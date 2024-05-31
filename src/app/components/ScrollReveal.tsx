@@ -47,7 +47,7 @@ const ScrollRevealContainer: FC<ScrollRevealContainerProps> = ({
     };
 
     const observer = new IntersectionObserver(handleIntersect, {
-      threshold: 0.01 // 要素が1％表示されたときにトリガー
+      threshold: 0.15 // 要素が1％表示されたときにトリガー
     });
 
     observer.observe(section);

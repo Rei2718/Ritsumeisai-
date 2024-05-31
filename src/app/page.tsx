@@ -1,9 +1,15 @@
 "use client";
 
+import { useEffect } from 'react';
 import Header from './components/header';
 import ScrollRevealContainer from './components/ScrollReveal';
 
 export default function Home() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <>
       <Header />
@@ -20,15 +26,15 @@ export default function Home() {
               <div className="mb-1 text-base sm:text-lg md:text-xl">2024.7.20 (Mon) - 2024.7.21 (Tue)</div>
             </ScrollRevealContainer>
             <ScrollRevealContainer move="bottom">
-              <div className="text-xs sm:text-sm md:text-base">@RitsumeikanKeisho 7:12</div>
+              <div className="text-xs sm:text-sm md:text-base">@RitsumeikanKeisho 1:00</div>
             </ScrollRevealContainer>
           </div>
         </section>
 
         {/* Section 2 */}
-        <section className="flex items-center justify-center h-lvh text-center">
-          <div className="top-2/4 transform -translate-y-1/2 text-white text-center absolute z-10 mx-10 sm:mx-10 md:mx-20 lg:mx-32 xl:mx-40">
-            <div className="font-mono text-lg sm:text-2xl text-white text-center flex flex-col items-center">
+        <section className="flex items-center justify-center h-lvh">
+          <div className="top-[37.5%] transform -translate-y-1/2 text-white text-center absolute z-10 mx-10 sm:mx-10 md:mx-20 lg:mx-32 xl:mx-40">
+            <div className="text-lg sm:text-2xl text-white text-center flex flex-col items-center">
               <ScrollRevealContainer move="bottom">
                 <p className="text-lg sm:text-2xl">
                   世界に没入し<br />
@@ -42,7 +48,7 @@ export default function Home() {
                   <span className="text-gray-500"></span>
                 </ScrollRevealContainer>
               </div>
-              <div className="text-xs sm:text-sm">
+              <div className="text-sm sm:text-base">
                 <ScrollRevealContainer move="bottom">
                   <p className="mb-4 sm:mb-8">
                     <strong>立命館慶祥中学校・高等学校</strong>は、開校以来この言葉をスローガンに掲げ、日本国内だけでなく、世界を舞台に活躍できる人材の育成に力を入れてきました。
