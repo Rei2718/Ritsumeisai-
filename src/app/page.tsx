@@ -9,9 +9,9 @@ export default function Home() {
         <img src="BG02.jpg" alt="BgImg" className="object-cover w-screen h-lvh fixed top-0 left-0 z-0"/>
         <div className="relative z-10 bg-gradient-css">
           {/* Section 1 */}
-          <section className="flex items-center justify-center h-screen px-10">
+          <section className="flex items-center justify-center h-screen">
             {/* TopCharacter */}
-            <div className="top-[12.5%] transform -translate-y-1/2 text-white text-center absolute z-10">
+            <div className="top-[12.5%] transform -translate-y-1/2 text-white text-center absolute px-10 z-10">
               <div className="mb-4 px-5 text-5xl md:text-7xl">2024 RitsumeiSai</div>
               <div className="mb-1 text-lg md:text-xl">2024.7.20 (Mon) - 2024.7.21 (Tue)</div>
               <div className="text-sm md:text-base">@RitsumeikanKeisho 7:12</div>
