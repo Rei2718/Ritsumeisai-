@@ -34,13 +34,15 @@ export default function Header() {
       {/* Header */}
       <header className="z-50 fixed top-0 w-full">
         <div className="flex justify-between items-center h-full w-full bg-clip-padding">
-          <div className="py-3 px-3 flex justify-start items-center">
-            <img
-              src="logo.png"
-              alt="logo"
-              className="w-10 h-10 bg-transparent cursor-pointer"
-            />
-          </div>
+　　　　　　　<a onClick={() => handleLinkClick('/')}>
+            <div className="py-3 px-3 flex justify-start items-center">
+              <img
+                src="logo.png"
+                alt="logo"
+                className="w-10 h-10 bg-transparent cursor-pointer"
+              />
+            </div>
+　　　　　　　</a>
           <div className="flex-grow flex justify-center items-center">
             <div className='text-lg text-white'>Ritsumeikan Keisho</div>
           </div>
