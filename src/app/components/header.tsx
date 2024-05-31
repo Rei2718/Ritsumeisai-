@@ -12,7 +12,7 @@ export default function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const handleLinkClick = (href) => {
+  const handleLinkClick = (href: string) => {
     if (pathname === href) {
       setIsMenuOpen(false);
     } else {
