@@ -12,7 +12,7 @@ export default function Home() {
         {/* Section 1 */}
         <section className="flex items-center justify-center h-lvh">
           {/* TopCharacter */}
-          <div className="top-[12.5%] transform -translate-y-1/2 text-white text-center absolute px-4 sm:px-10 z-10">
+          <div className="top-[12.5%] transform -translate-y-1/2 text-white text-center absolute mx-10 sm:mx-10 z-10">
            <ScrollRevealContainer move="bottom">
               <div className="mb-4 px-2 sm:px-5 text-4xl sm:text-5xl md:text-7xl">2024 RitsumeiSai</div>
             </ScrollRevealContainer>
@@ -26,11 +26,11 @@ export default function Home() {
         </section>
 
         {/* Section 2 */}
-        <section className="flex items-center justify-center h-lvh text-center px-4 sm:px-10 md:px-80">
-          <div className="top-2/4 transform -translate-y-1/2 text-white text-center absolute z-10">
-            <div className="font-serif text-white text-center py-2 px-8 flex flex-col items-center">
+        <section className="flex items-center justify-center h-lvh text-center">
+          <div className="top-2/4 transform -translate-y-1/2 text-white text-center absolute z-10 mx-10 sm:mx-10 md:mx-20 lg:mx-32 xl:mx-40">
+            <div className="font-mono text-lg sm:text-2xl text-white text-center flex flex-col items-center">
               <ScrollRevealContainer move="bottom">
-                <p className="text-lg sm:text-2xl pt-2">
+                <p className="text-lg sm:text-2xl">
                   世界に没入し<br />
                   他者と共に創造し<br />
                   一体となる
