@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
         <Header />
-        <img src="BG02.jpg" alt="BgImg" className="object-cover h-school w-screen fixed top-0 left-0 z-0"/>
+        <img src="BG02.jpg" alt="BgImg" className="object-cover h-screen w-screen fixed top-0 left-0 z-0"/>
         <div className="relative z-10 bg-gradient-css">
           {/* Section 1 */}
           <section className="flex items-center justify-center h-screen px-10">
