@@ -28,7 +28,7 @@ export default function Home() {
         {/* Section 2 */}
         <section className="flex items-center justify-center h-lvh text-center px-4 sm:px-10 md:px-20 lg:px-32 xl:px-40">
           <div className="top-2/4 transform -translate-y-1/2 text-white text-center absolute z-10">
-            <div className="font-serif text-white text-center flex flex-col items-center">
+            <div className="font-mono text-lg sm:text-2xl text-white text-center flex flex-col items-center">
               <ScrollRevealContainer move="bottom">
                 <p className="text-lg sm:text-2xl">
                   世界に没入し<br />
