@@ -33,7 +33,7 @@ export default function Header() {
     <>
         {/* Header */}
         <header className="z-50 fixed top-0 w-full">
-          <div className="flex justify-between items-center h-full w-full bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-0">
+          <div className="flex justify-between items-center h-full w-full bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-1">
               <div className="py-3 px-3 flex justify-start items-center">
                 <img
                   src="logo.png"
