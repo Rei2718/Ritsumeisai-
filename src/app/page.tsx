@@ -12,7 +12,7 @@ export default function Home() {
         {/* Section 1 */}
         <section className="flex items-center justify-center h-lvh">
           {/* TopCharacter */}
-          <div className="top-[12.5%] transform -translate-y-1/2 text-white text-center absolute px-4 sm:px-10 z-10">
+          <div className="top-[12.5%] transform -translate-y-1/2 text-white text-center absolute mx-10 sm:mx-10 z-10">
            <ScrollRevealContainer move="bottom">
               <div className="mb-4 px-2 sm:px-5 text-4xl sm:text-5xl md:text-7xl">2024 RitsumeiSai</div>
             </ScrollRevealContainer>
@@ -26,8 +26,8 @@ export default function Home() {
         </section>
 
         {/* Section 2 */}
-        <section className="flex items-center justify-center h-lvh text-center px-4 sm:px-10 md:px-20 lg:px-32 xl:px-40">
-          <div className="top-2/4 transform -translate-y-1/2 text-white text-center absolute z-10">
+        <section className="flex items-center justify-center h-lvh text-center">
+          <div className="top-2/4 transform -translate-y-1/2 text-white text-center absolute z-10 mx-52 sm:mx-10 md:mx-20 lg:mx-32 xl:mx-40">
             <div className="font-mono text-lg sm:text-2xl text-white text-center flex flex-col items-center">
               <ScrollRevealContainer move="bottom">
                 <p className="text-lg sm:text-2xl">
