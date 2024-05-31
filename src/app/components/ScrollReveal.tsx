@@ -35,6 +35,7 @@ const ScrollRevealContainer: FC<ScrollRevealContainerProps> = ({
           opacity: 1, // アニメーション後の最終的な透明度
           origin: move || "bottom",
           distance: "5px",
+          viewFactor: 0.0,
           beforeReveal: el => {
             // アニメーション前の処理
             if (el instanceof HTMLElement) {
