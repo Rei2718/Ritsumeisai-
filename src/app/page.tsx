@@ -13,9 +13,15 @@ export default function Home() {
         <section className="flex items-center justify-center h-lvh">
           {/* TopCharacter */}
           <div className="top-[12.5%] transform -translate-y-1/2 text-white text-center absolute px-4 sm:px-10 z-10">
-            <div className="mb-4 px-2 sm:px-5 text-4xl sm:text-5xl md:text-7xl">2024 RitsumeiSai</div>
-            <div className="mb-1 text-base sm:text-lg md:text-xl">2024.7.20 (Mon) - 2024.7.21 (Tue)</div>
-            <div className="text-xs sm:text-sm md:text-base">@RitsumeikanKeisho 7:12</div>
+           <ScrollRevealContainer move="bottom">
+              <div className="mb-4 px-2 sm:px-5 text-4xl sm:text-5xl md:text-7xl">2024 RitsumeiSai</div>
+            </ScrollRevealContainer>
+            <ScrollRevealContainer move="bottom">
+              <div className="mb-1 text-base sm:text-lg md:text-xl">2024.7.20 (Mon) - 2024.7.21 (Tue)</div>
+            </ScrollRevealContainer>
+            <ScrollRevealContainer move="bottom">
+              <div className="text-xs sm:text-sm md:text-base">@RitsumeikanKeisho 7:12</div>
+            </ScrollRevealContainer>
           </div>
         </section>
 
