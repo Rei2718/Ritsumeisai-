@@ -71,34 +71,28 @@ export default function Header() {
 
       {/* Fullscreen Menu */}
       <div className={`fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-40 transition-opacity duration-700 ${isMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
-        <ul className="text-white text-2xl space-y-4">
+        <ul className="text-white text-2xl space-y-6">
           <li><button onClick={() => handleLinkClick('/')}>Home</button></li>
-          <li>
+          <li className="relative">
             <button onClick={() => toggleSubMenu('section01')}>Section1</button>
-            {activeMenu === 'section01' && (
-              <ul className="pl-4 space-y-2">
-                <li><button onClick={() => handleLinkClick('/section01/sub1')}>Subsection 1-1</button></li>
-                <li><button onClick={() => handleLinkClick('/section01/sub2')}>Subsection 1-2</button></li>
-              </ul>
-            )}
+            <ul className={`pl-4 space-y-2 overflow-hidden transition-max-height duration-700 ${activeMenu === 'section01' ? 'max-h-40' : 'max-h-0'}`}>
+              <li><button onClick={() => handleLinkClick('/section01/sub1')}>Subsection 1-1</button></li>
+              <li><button onClick={() => handleLinkClick('/section01/sub2')}>Subsection 1-2</button></li>
+            </ul>
           </li>
-          <li>
+          <li className="relative">
             <button onClick={() => toggleSubMenu('section02')}>Section2</button>
-            {activeMenu === 'section02' && (
-              <ul className="pl-4 space-y-2">
-                <li><button onClick={() => handleLinkClick('/section02/sub1')}>Subsection 2-1</button></li>
-                <li><button onClick={() => handleLinkClick('/section02/sub2')}>Subsection 2-2</button></li>
-              </ul>
-            )}
+            <ul className={`pl-4 space-y-2 overflow-hidden transition-max-height duration-700 ${activeMenu === 'section02' ? 'max-h-40' : 'max-h-0'}`}>
+              <li><button onClick={() => handleLinkClick('/section02/sub1')}>Subsection 2-1</button></li>
+              <li><button onClick={() => handleLinkClick('/section02/sub2')}>Subsection 2-2</button></li>
+            </ul>
           </li>
-          <li>
+          <li className="relative">
             <button onClick={() => toggleSubMenu('section03')}>Section3</button>
-            {activeMenu === 'section03' && (
-              <ul className="pl-4 space-y-2">
-                <li><button onClick={() => handleLinkClick('/section03/sub1')}>Subsection 3-1</button></li>
-                <li><button onClick={() => handleLinkClick('/section03/sub2')}>Subsection 3-2</button></li>
-              </ul>
-            )}
+            <ul className={`pl-4 space-y-2 overflow-hidden transition-max-height duration-700 ${activeMenu === 'section03' ? 'max-h-40' : 'max-h-0'}`}>
+              <li><button onClick={() => handleLinkClick('/section03/sub1')}>Subsection 3-1</button></li>
+              <li><button onClick={() => handleLinkClick('/section03/sub2')}>Subsection 3-2</button></li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -106,3 +100,4 @@ export default function Header() {
     </>
   );
 }
+
