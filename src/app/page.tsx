@@ -93,7 +93,7 @@ function HomeContent() {
 
 export default function Home() {
   return (
-    <Suspense fallback={<div className="bg-black" className='bg-black h-lvh'></div>}>
+    <Suspense fallback={<div className='bg-black h-lvh'></div>}>
       <HomeContent />
     </Suspense>
   );
