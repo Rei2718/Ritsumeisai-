@@ -73,6 +73,7 @@ export default function Header() {
           <li><button onClick={() => handleLinkClick('/section03')}>Section3</button></li>
         </ul>
       </div>
+      <img src="BG02.jpg" alt="BgImg" className="object-cover w-screen h-lvh fixed top-0 left-0 z-0"/>
     </>
   );
 }
