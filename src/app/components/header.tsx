@@ -39,7 +39,7 @@ export default function Header() {
       {/* Header */}
       <header className="z-50 fixed top-0 w-full">
         <div className="flex justify-between items-center h-full w-full bg-gray-800 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-0">
-          <a onClick={() => handleLinkClick('/')}>
+          <button onClick={() => handleLinkClick('/')}>
             <div className="py-3 px-3 flex justify-start items-center">
               <img
                 src="logo.png"
@@ -47,7 +47,7 @@ export default function Header() {
                 className="w-10 h-10 bg-transparent cursor-pointer"
               />
             </div>
-          </a>
+          </button>
           <div className='text-lg text-white'><span className='text-red-500'>R</span>itsumeikan Keisho</div>
           <div className="py-3 px-3 flex justify-end items-center">
             <button
@@ -67,10 +67,10 @@ export default function Header() {
       {/* Fullscreen Menu */}
       <div className={`fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-40 transition-opacity duration-700 ${isMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
         <ul className="text-white text-2xl space-y-4">
-          <li><a onClick={() => handleLinkClick('/')}>Home</a></li>
-          <li><a onClick={() => handleLinkClick('/section01')}>Section1</a></li>
-          <li><a onClick={() => handleLinkClick('/section02')}>Section2</a></li>
-          <li><a onClick={() => handleLinkClick('/section03')}>Section3</a></li>
+          <li><button onClick={() => handleLinkClick('/')}>Home</button></li>
+          <li><button onClick={() => handleLinkClick('/section01')}>Section1</button></li>
+          <li><button onClick={() => handleLinkClick('/section02')}>Section2</button></li>
+          <li><button onClick={() => handleLinkClick('/section03')}>Section3</button></li>
         </ul>
       </div>
     </>
