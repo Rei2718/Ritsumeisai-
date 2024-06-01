@@ -31,3 +31,12 @@
     rgba(0, 0, 0, 0) 100%
   );
 }
+
+/* CSS for smooth max-height transitions */
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.transition-max-height {
+  transition: max-height 0.7s ease-in-out;
+}
