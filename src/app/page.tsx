@@ -24,7 +24,7 @@ function HomeContent() {
               <div className="text-xs sm:text-sm md:text-base">@RitsumeikanKeisho 1:00</div>
             </ScrollRevealContainer>
           </div>
-          <div className="absolute bottom-[10%] left-0 right-0 flex items-center justify-center">
+          <div className="absolute bottom-[15%] left-0 right-0 flex items-center justify-center">
             <ScrollIndicator />
           </div>
         </section>
