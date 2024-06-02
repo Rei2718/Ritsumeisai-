@@ -3,6 +3,7 @@
 import { Suspense } from 'react';
 import Header from './components/header';
 import ScrollRevealContainer from './components/ScrollReveal';
+import ScrollIndicator from './components/ScrollIndicator';
 
 function HomeContent() {
   return (
@@ -10,9 +11,9 @@ function HomeContent() {
       <Header />
       <div className="relative z-10 bg-gradient-css">
         {/* Section 1 */}
-        <section className="flex items-center justify-center h-lvh">
+        <section className="flex items-center justify-center h-lvh relative">
           {/* TopCharacter */}
-          <div className="top-[12.5%] transform -translate-y-1/2 text-white text-center absolute mx-10 sm:mx-10 z-10">
+          <div className="top-[50%] transform -translate-y-1/2 text-white text-center absolute mx-10 sm:mx-10 z-10">
             <ScrollRevealContainer move="bottom">
               <div className="mb-4 px-2 sm:px-5 text-4xl sm:text-5xl md:text-7xl">2024 RitsumeiSai</div>
             </ScrollRevealContainer>
@@ -22,6 +23,9 @@ function HomeContent() {
             <ScrollRevealContainer move="bottom">
               <div className="text-xs sm:text-sm md:text-base">@RitsumeikanKeisho 1:00</div>
             </ScrollRevealContainer>
+          </div>
+          <div className="absolute bottom-[10%] left-0 right-0 flex items-center justify-center">
+            <ScrollIndicator />
           </div>
         </section>
 

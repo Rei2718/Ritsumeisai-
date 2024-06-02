@@ -6,6 +6,7 @@ import { useRouter, usePathname, useSearchParams } from 'next/navigation';
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState('');
+  const [IsHeader, setIsHeader] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -27,6 +28,14 @@ export default function Header() {
     setActiveMenu(activeMenu === menu ? '' : menu);
   };
 
+  const handleScroll = () => {
+    if (window.scrollY > window.innerHeight) {
+      setIsHeader(true);
+    } else {
+      setIsHeader(false);
+    }
+  };
+
   useEffect(() => {
     if (isMenuOpen) {
       document.body.classList.add('overflow-hidden');
@@ -39,11 +48,24 @@ export default function Header() {
     window.scrollTo(0, 0);
   }, [pathname, searchParams]);
 
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleScroll);
+
+    // 初回チェック
+    handleScroll();
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleScroll);
+    };
+  }, []);
+
   return (
     <>
       {/* Header */}
-      <header className="z-50 fixed top-0 w-full">
-        <div className="flex justify-between items-center h-full w-full bg-gray-800 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-0">
+      <header className={`z-50 fixed top-0 w-full ${IsHeader ? 'backdrop-blur-[2px]' : 'backdrop-blur-none'}`}>
+        <div className="flex justify-between items-center h-full w-full bg-gray-800 bg-clip-padding backdrop-filter bg-opacity-0">
           <button onClick={() => handleLinkClick('/')}>
             <div className="py-3 px-3 flex justify-start items-center">
               <img
@@ -77,9 +99,9 @@ export default function Header() {
 
           <li className='py-1.5'><button onClick={() => handleLinkClick('/kitchen')}>キッチンカー</button></li>
 
-          <li className='py-1.5'><button onClick={() => handleLinkClick('/arena')}>アリーナ有志</button></li>
-
           <li className='py-1.5'><button onClick={() => handleLinkClick('/cotan')}>Co-Tan BP</button></li>
+
+          <li className='py-1.5'><button onClick={() => handleLinkClick('/arena')}>アリーナ有志</button></li>
 
           {/* Section02 */}
           <li className="py-1.5">
@@ -121,8 +143,19 @@ export default function Header() {
         </ul>
       </div>
 
-      {/* BgImg */}
-      <img src="../BG02.jpg" alt="BgImg" className="object-cover w-screen h-lvh fixed top-0 left-0 z-0"/>
+      {/* KeyVisual */}
+      <div className="object-cover w-screen h-screen fixed top-0 left-0 z-0">
+        {/* BgImg */}
+        <img src="../main.gif" alt="BgImg" className="w-full h-full object-cover md:hidden"/>
+        <img src="../BG02.jpg" alt="BgImg" className="w-full h-full object-cover hidden md:block"/>
+        <div className="absolute inset-0 bg-fixed z-10"
+            style={{ 
+              backgroundImage: `url(https://www.twicejapan.com/static/twice/official/top/dot.png)`,
+              backgroundRepeat: 'repeat',
+              backgroundSize: '2px 2px'
+            }}>
+        </div>
+      </div>
     </>
   );
 }
