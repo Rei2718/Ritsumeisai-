@@ -31,7 +31,7 @@ function HomeContent() {
 
         {/* Section 2 */}
         <section className="flex items-center justify-center h-lvh">
-          <div className="top-[37.5%] transform -translate-y-1/2 text-white text-center absolute z-10 mx-10 sm:mx-10 md:mx-20 lg:mx-32 xl:mx-40">
+          <div className="text-white text-center absolute z-10 mx-10 sm:mx-10 md:mx-20 lg:mx-32 xl:mx-40">
             <div className="text-lg sm:text-2xl text-white text-center flex flex-col items-center">
               <ScrollRevealContainer move="bottom">
                 <p className="text-lg sm:text-2xl">
@@ -40,16 +40,15 @@ function HomeContent() {
                   一体となる
                 </p>
               </ScrollRevealContainer>
-              <div className="flex my-4 sm:my-10">
+              <div className="flex my-8">
                 <ScrollRevealContainer move="bottom">
-                  <div className="h-12 sm:h-24 border-r-2"></div>
-                  <span className="text-gray-500"></span>
+                  <div className="h-20 border-r-2"></div>
                 </ScrollRevealContainer>
               </div>
               <div className="text-sm sm:text-base">
                 <ScrollRevealContainer move="bottom">
                   <p className="mb-4 sm:mb-8">
-                    <strong>立命館慶祥中学校・高等学校</strong>は、開校以来この言葉をスローガンに掲げ、日本国内だけでなく、世界を舞台に活躍できる人材の育成に力を入れてきました。
+                    <strong><span className='text-red-500'>立命館慶祥中学校・高等学校</span></strong>は、開校以来この言葉をスローガンに掲げ、日本国内だけでなく、世界を舞台に活躍できる人材の育成に力を入れてきました。
                   </p>
                 </ScrollRevealContainer>
 
@@ -82,8 +81,63 @@ function HomeContent() {
         </section>
 
         {/* Section 3 */}
-        <section className="flex items-center justify-center h-lvh text-center px-4 sm:px-10">
-          {/* 内容を追加する場合、ここに記述 */}
+        <section className="flex items-center justify-center h-lvh">
+          <div className="text-white text-center flex flex-col items-center absolute z-10 mx-10 sm:mx-10 md:mx-20 lg:mx-32 xl:mx-40">
+            <ScrollRevealContainer move="bottom">
+              <p className="text-xl">
+                注意事項 / 免責事項
+              </p>
+            </ScrollRevealContainer>
+            <div className="flex my-8">
+              <ScrollRevealContainer move="bottom">
+                <div className="h-20 border-r-2"></div>
+              </ScrollRevealContainer>
+            </div>
+            <div className="text-sm">
+              <ScrollRevealContainer move="bottom">
+                <p className="mb-4">
+                  1. 校内の映像・音声機器には触れないでください
+                </p>
+              </ScrollRevealContainer>
+
+              <ScrollRevealContainer move="bottom">
+                <p className="mb-4">
+                  2. 関係者以外立ち入り禁止のエリアには入らないでください
+                </p>
+              </ScrollRevealContainer>
+
+              <ScrollRevealContainer move="bottom">
+                <p className="mb-4">
+                  3. 許可のある展示物以外には触れないでください
+                </p>
+              </ScrollRevealContainer>
+
+              <ScrollRevealContainer move="bottom">
+                <p className="mb-4">
+                  4. 本校の敷地内における喫煙・飲酒はご遠慮ください
+                </p>
+              </ScrollRevealContainer>
+
+              <ScrollRevealContainer move="bottom">
+                <p className="mb-4">
+                  5. 本校生徒の顔、又は生徒が映り込む写真・映像等のSNS等公衆への公開はご遠慮ください
+                </p>
+              </ScrollRevealContainer>
+
+              <ScrollRevealContainer move="bottom">
+                <p className="mb-4">
+                  6. 当サイトを利用したことや何らかの原因により利用できなかったことによって生じる一切の損害、および第三者によるデータの書き込み、不正なアクセス、発言、メールの送信などに関して、K-Techは一切責任を負いません。
+                </p>
+              </ScrollRevealContainer>
+
+              <ScrollRevealContainer move="bottom">
+                <div className="text-xs mb-1">
+                  <p className="mb-1">以下のプライバシーポリシーを必ずご確認ください</p>
+                  <p className="text-blue-500">プライバシーポリシー</p>
+                </div>
+              </ScrollRevealContainer>
+            </div>
+          </div>
         </section>
 
         {/* Section 4 */}
