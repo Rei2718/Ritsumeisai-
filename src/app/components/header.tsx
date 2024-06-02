@@ -67,7 +67,7 @@ export default function Header() {
       <header className={`z-50 fixed top-0 w-full ${IsHeader ? 'backdrop-blur-[2px]' : 'backdrop-blur-none'}`}>
         <div className="flex justify-between items-center h-full w-full bg-gray-800 bg-clip-padding backdrop-filter bg-opacity-0">
           <button onClick={() => handleLinkClick('/')}>
-            <div className="py-3 px-3 flex justify-start items-center">
+            <div className="py-2 px-2 flex justify-start items-center">
               <img
                 src="../logo.png"
                 alt="logo"
@@ -75,8 +75,8 @@ export default function Header() {
               />
             </div>
           </button>
-          <div className='text-lg text-white'><span className='text-red-500'>R</span>itsumeikan Keisho</div>
-          <div className="py-3 px-3 flex justify-end items-center">
+          <div className='text-base text-white'><span className='text-red-500'>R</span>itsumeikan Keisho</div>
+          <div className="py-2 px-2 flex justify-end items-center">
             <button
               onClick={toggleMenu}
               className="text-white focus:outline-none z-50 relative w-10 h-10 px-1"
