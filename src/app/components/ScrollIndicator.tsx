@@ -27,7 +27,7 @@ const ScrollIndicator = () => {
         fill="none"
         viewBox="0 0 24 24"
         stroke="white"
-        transform="rotate(-90)"
+        transform="rotate(0)"
       >
         <path
           strokeLinecap="round"
