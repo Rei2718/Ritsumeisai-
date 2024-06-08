@@ -31,3 +31,40 @@
     rgba(0, 0, 0, 0) 100%
   );
 }
+
+
+.line-1-vertical {
+  --size: 24px;
+  --stroke-width: calc(var(--size) / 12);
+  --color: currentColor;
+  --animation-timing-function: cubic-bezier(0.85, 0, 0.15, 1);
+  --animation-duration: 2s;
+  width: var(--stroke-width);
+  height: var(--size);
+  background-color: var(--color);
+  transform: scaleY(0);
+  transform-origin: top center;
+  animation: var(--animation-timing-function) var(--animation-duration) infinite line-1-vertical-animation;
+}
+
+@keyframes line-1-vertical-animation {
+  0% {
+    transform: scaleY(0);
+    transform-origin: top center;
+  }
+
+  50% {
+    transform: scaleY(1);
+    transform-origin: top center;
+  }
+
+  51% {
+    transform: scaleY(1);
+    transform-origin: bottom center;
+  }
+
+  100% {
+    transform: scaleY(0);
+    transform-origin: bottom center;
+  }
+}
